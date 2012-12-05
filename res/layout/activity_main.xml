@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tableLayout1"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content"
+    android:stretchColumns="*"
+    android:shrinkColumns="*"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp">
+ 
+    <!-- 2 columns -->
+   <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <EditText
+            android:id="@+id/patientID"
+            android:layout_span="2"
+            android:text="1234" />
+        
+        <TextView
+            android:id="@+id/txtpatientID"
+            android:text="Patient ID"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+ 
+
+    </TableRow>
+ 
+    <!-- edittext span 2 column -->
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <EditText
+            android:id="@+id/systolic"
+            android:layout_span="2"
+            android:text="1234" />
+        
+        <TextView
+            android:id="@+id/txtsystolic"
+            android:text="Systolic"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+ 
+
+ 
+    <!-- 3 columns -->
+    <TableRow
+        android:id="@+id/tableRow3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <EditText
+            android:id="@+id/diastolic"
+            android:layout_span="2"
+            android:text="1234" />
+        
+        <TextView
+            android:id="@+id/txtdiastolic"
+            android:text="Diastolic"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+ 
+    <!-- display this button in 3rd column via layout_column(zero based) -->
+    <TableRow
+        android:id="@+id/tableRow4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <EditText
+            android:id="@+id/puls"
+            android:layout_span="2"
+            android:text="1234" />
+        
+        <TextView
+            android:id="@+id/txtpuls"
+            android:text="Puls"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </TableRow>
+ 
+    <TableRow
+        android:id="@+id/tableRow5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <EditText
+            android:id="@+id/adressing"
+            android:layout_span="2"
+            android:text="brak" />
+    </TableRow>
+    
+    <View
+        android:layout_height="2dip"
+        android:background="#FF0000" />
+    
+    <!-- display this button in 2nd column via layout_column(zero based) -->
+    <TableRow
+        android:id="@+id/tableRow6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_column="1"
+            android:text="Send" />
+    </TableRow>
+ 
+    <TableRow
+        android:id="@+id/tableRow7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dip" >
+ 
+        <TextView
+            android:id="@+id/txtback"
+            android:text="Back Msg"
+            android:layout_span="2"
+            android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+    </TableRow>
+    
+    
+</TableLayout>
